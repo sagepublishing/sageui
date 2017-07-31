@@ -10,6 +10,10 @@ color:#000;
     color: #000 !important;
 }
 
+.skin-blue .main-header .navbar {
+    background-color: white !important;
+}
+
 .main-footer,  .main-footer a {
     color: #888 !important;
     background: #f7f7f7 !important
@@ -17,13 +21,20 @@ color:#000;
 
 /* Removing underline from header*/
 h2{
-    background:none;
+    background:none !important;
 }
 
-/* Adding an overlay to slider*/
-.overlay-grey{
-    background-color: #333;
-    opacity:0.4;
+.header-category {
+    min-height: 350px;
+    background-color: #4d3069;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 -25px;
+    padding: 10px;
+}
+
+.white {
+    color: #fff !important;
 }
 
 /*Hiding things in left nav*/

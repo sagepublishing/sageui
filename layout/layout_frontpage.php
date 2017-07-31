@@ -165,17 +165,29 @@ echo $OUTPUT->doctype();
 				    </div>
 				<?php } else {
 				?>
-				        <div class="wdm_static_image " style="background-image: url(<?php echo $sliderdata['staticimage']; ?>); background-size: cover; background-position: center; max-height:350px">
-				            <a href="#">
-                                <div class="overlay-grey" style="max-height:350px">
-					          	<h2 class="wdm_static_image_text">
-						        	<span class="">
-										<?php echo $sliderdata['addtxt']; ?>
-						        	</span>
-						        </h2>
-                                </div>
-					        </a>
-				        </div>
+                
+                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
+    <div class="container-fluid" style="max-width:1300px;">
+	<div class="row">
+		<div class="col-lg-12 text-center product-speech">
+<div class="jumbotron" style="background: rgba(0,0,0,.65);margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;">
+  
+  <h2 class="white">Learn Data Science Online.<br />
+Courses by Social Scientists, for Social Scientists.</h2>
+</div>
+        </div>
+	</div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 text-center">  
+               
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    </div>	
+</div>
 				<?php }
 				    }
 				}// End of checking of sliderdata contains value or not
