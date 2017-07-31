@@ -165,13 +165,15 @@ echo $OUTPUT->doctype();
 				    </div>
 				<?php } else {
 				?>
-				        <div class="wdm_static_image " style="background-image: url(<?php echo $sliderdata['staticimage']; ?>); background-size: cover; background-position: center;">
+				        <div class="wdm_static_image " style="background-image: url(<?php echo $sliderdata['staticimage']; ?>); background-size: cover; background-position: center; max-height:350px">
 				            <a href="#">
+                                <div class="overlay-grey" style="max-height:350px">
 					          	<h2 class="wdm_static_image_text">
 						        	<span class="">
 										<?php echo $sliderdata['addtxt']; ?>
 						        	</span>
 						        </h2>
+                                </div>
 					        </a>
 				        </div>
 				<?php }
@@ -377,6 +379,11 @@ echo $OUTPUT->doctype();
 			        <?php } ?>
 		        </div>
 		    <?php } ?>
+            <div class="row pad-20">
+                <h2>Contact Us</h2>
+                <p>For technical support please contact <a href="mailto:email@email.com">email@email.com</a></p>
+                
+            </div>
 
 		    <!-- frontpage recent blog -->
 		    <?php if (isloggedin() && !empty($CFG->enableblogs) && is_array($recentblogs) && !empty($recentblogs)) { ?>

@@ -321,7 +321,7 @@ $activity_id = (isset($PAGE->cm->id)?$PAGE->cm->id:false);
                   ?>
                     <a <?= $attr?>>
                   <?php
-                  }z
+                  }
                   ?>
                       <i class="<?= $icon?>" style="display: table-cell; vertical-align: top;padding-top: 3px;"></i>
                       <span style="display: table-cell; vertical-align: top;"><?= $b->text?></span>

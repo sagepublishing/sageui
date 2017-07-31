@@ -14,3 +14,25 @@ color:#000;
     color: #888 !important;
     background: #f7f7f7 !important
 }
+
+/* Removing underline from header*/
+h2{
+    background:none;
+}
+
+/* Adding an overlay to slider*/
+.overlay-grey{
+    background-color: #333;
+    opacity:0.4;
+}
+
+/*Hiding things in left nav*/
+li[data-key="7"],.main-sidebar .sidebar-menu li:nth-child(2){
+    display: none;
+}
+
+/*Styling by brand*/
+.btn-primary{
+    background-color:#499e37;
+    color:#fff;
+}
