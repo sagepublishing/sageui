@@ -371,26 +371,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
 		    <div id="region-main" class="default-section">
 		        <?php echo $OUTPUT->main_content(); ?>
 		    </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                   <h2>ABOUT SAGE CAMPUS</h2><p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
+                </div>
+            </div>
 
-	    	<!-- about us section -->
-		    <?php if ( \theme_remui\toolbox::get_setting('enablefrontpageaboutus') === "1" && !empty($frontpageaboutusheading) && !empty($frontpageaboutustext)) { ?>
-		        <div class="row about-us pad-20">
-			        <?php if ($frontpageaboutusimage == null) { ?>
-			          	<div class="col-md-12 about-us-text">
-			            	<h2 class="section-heading no-margin"><?php echo $frontpageaboutusheading; ?></h2>
-			            	<div class="margin-t-5 text-muted"><?php echo  $frontpageaboutustext; ?></div>
-			          	</div>
-			        <?php } else { ?>
-			        	<div class="col-md-7 about-us-text">
-				            <h2 class="section-heading no-margin"><?php echo $frontpageaboutusheading; ?></h2>
-				            <div class="margin-t-5 text-muted"><?php echo  $frontpageaboutustext; ?></div>
-				        </div>
-				        <div class="col-md-4 col-md-offset-1 about-us-img">
-				            <img src='<?php echo $frontpageaboutusimage; ?>' class='img-responsive margin-auto' alt='About US'>
-				        </div>
-			        <?php } ?>
-		        </div>
-		    <?php } ?>
             <div class="row pad-20">
                 <h2>Contact Us</h2>
                 <p>For technical support please contact <a href="mailto:email@email.com">email@email.com</a></p>
