@@ -45,12 +45,12 @@ h2{
 }
 .row.wdm_generalbox .iconbox:hover {
    background-color: #a31850;
-    color:#fff;
+    color:#fff!important;
 }
-.row.wdm_generalbox .iconbox .iconbox-content h4:hover {
+.row.wdm_generalbox .iconbox .iconbox-content h4:hover,.row.wdm_generalbox .iconbox .iconbox-content h4 {
     color: #fff;
 }
-.white {
+.white{
     color: #fff !important;
 }
 

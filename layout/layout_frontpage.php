@@ -216,7 +216,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content ">
-						<h4><?php echo $frontpageblocksection1; ?></h4>
+						<p><?php echo $frontpageblocksection1; ?></p>
 						<div class="description"><?php echo $frontpageblockdescriptionsection1; ?></div>
 					</div>
 
@@ -236,7 +236,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content">
-						<h4><?php echo $frontpageblocksection2; ?></h4>
+						<p><?php echo $frontpageblocksection2; ?></p>
 						<div class="description"><?php echo $frontpageblockdescriptionsection2; ?></div>
 					</div>
 
@@ -258,7 +258,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<h4><?php echo $frontpageblocksection3; ?></h4>
+						<p><?php echo $frontpageblocksection3; ?></p>
 						<div class="description"><?php echo $frontpageblockdescriptionsection3; ?></div>
 					</div>
 
@@ -279,7 +279,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<h4><?php echo $frontpageblocksection4; ?></h4>
+						<p><?php echo $frontpageblocksection4; ?></p>
 						<div class="description"><?php echo $frontpageblockdescriptionsection4; ?></div>
 					</div>
 
@@ -295,6 +295,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
             <div class="row">
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
+                    <a name="mycourses"></a>
                     <p>This is a standard message we display to users about courses. Something about if you don't see courses what email to contact etc etc.</p>
               <?php 
                     $courses = enrol_get_all_users_courses($USER->id, TRUE, array('format', 'summary', 'summaryformat'));
@@ -321,6 +322,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     $contentimages .= html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)), $images);
                     $contentimages .= html_writer::end_tag('div');
             } else {
+                $url='http://ec2-204-236-215-10.compute-1.amazonaws.com/theme/remui/data/nopic.jpg';
                 $image = $this->output->pix_icon(file_file_icon($file, 24), $file->get_filename(), 'moodle');
                 $filename = html_writer::tag('span', $image, array('class' => 'fp-icon')).
                         html_writer::tag('span', $file->get_filename(), array('class' => 'fp-filename'));
@@ -329,9 +331,6 @@ Courses by Social Scientists, for Social Scientists.</h2>
                         array('class' => 'coursefile fp-filename-icon'));
             }
         }
-                    if(!$isimage){
-                        $url='http://ec2-204-236-215-10.compute-1.amazonaws.com/theme/remui/data/nopic.jpg';
-                    }
                     
                     echo'
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -348,9 +347,10 @@ Courses by Social Scientists, for Social Scientists.</h2>
                         <h4>
                         <a class="wdm_course" href="/course/view.php?id='.$course->id.'" title="'.$course->fullname.'">'.$course->fullname.'                        </a>
                         </h4>
-                          '.$course->summary.'                      </div>
+                          '.$course->summary.'                      
+                           <a href="/course/view.php?id='.$course->id.'" class="btn btn-primary">Launch Course</a></div>
                       <!-- /.box-body -->
-                      <a href="/course/view.php?id='.$course->id.'" class="btn btn-primary">Launch Course</a>
+                     
                     </div>
                 </div>
                     ';
@@ -367,14 +367,6 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
                 </div>
             </div>
-              
-              <div class="row">
-                <div class="col-lg-12">
-                    <h2>My Courses</h2>
-                    <a name="mycourses"></a>
-                </div>
-              </div>
-
 		    
 <div class="row">
                 <div class="col-lg-12">
