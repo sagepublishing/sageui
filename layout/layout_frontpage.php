@@ -207,6 +207,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                  <div class="row wdm_generalbox">
 				<?php if (!empty($frontpageblocksection1) && !empty($frontpageblockdescriptionsection1)) {
 				?>
+                     <a href="#mycourses">
 			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection1)) { ?>
 						<div class="iconcircle">
@@ -223,8 +224,10 @@ Courses by Social Scientists, for Social Scientists.</h2>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink1;?>" target="_blank"><?php echo $sectionbuttontext1; ?></a>
 					<?php } ?>
 			      </div>
+                     </a>
 				<?php } if (!empty($frontpageblocksection2) && !empty($frontpageblockdescriptionsection2)) {
 				?>
+                     <a href="#aboutus">
 			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection2)) { ?>
 						<div class="iconcircle">
@@ -241,9 +244,11 @@ Courses by Social Scientists, for Social Scientists.</h2>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink2;?>" target="_blank"><?php echo $sectionbuttontext2; ?></a>
 					<?php } ?>
 			      </div>
+                     </a>
 				<?php }
 				if (!empty($frontpageblocksection3) && !empty($frontpageblockdescriptionsection3)) {
 				?>
+                     <a href="#faqs">
 			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					
 					<?php if(!empty($frontpageblockiconsection3)) { ?>
@@ -261,9 +266,11 @@ Courses by Social Scientists, for Social Scientists.</h2>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink3;?>" target="_blank"><?php echo $sectionbuttontext3; ?></a>
 					<?php } ?>
 			      </div>
+                     </a>
 				<?php }
 				if (!empty($frontpageblockiconsection4) && !empty($frontpageblocksection4) && !empty($frontpageblockdescriptionsection4)) {
 				?>
+                     <a href="#contactus">
 			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection4)) { ?>
 						<div class="iconcircle">
@@ -280,33 +287,99 @@ Courses by Social Scientists, for Social Scientists.</h2>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink4;?>" target="_blank"><?php echo $sectionbuttontext4; ?></a>
 					<?php } ?>
 			      </div>
+                     </a>
 				<?php } ?>
 		    </div> <!-- general sections end -->                   
                 </div>
             </div>
-            
-              <?php $courses=enrol_get_all_users_courses($USER->id, true, ['id', 'fullname']);
-            if(count($courses)>=1){
-            ?>
             <div class="row">
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
-                    <?php 
-                    foreach($courses as $course){
-                     echo $course->fullname;
-                    }
-                    ?>
-                </div>
-             
-            </div>
-            <?php 
+                    <p>This is a standard message we display to users about courses. Something about if you don't see courses what email to contact etc etc.</p>
+              <?php 
+                    $courses = enrol_get_all_users_courses($USER->id, TRUE, array('format', 'summary', 'summaryformat'));
+            if(count($courses)>=1){
+                echo'<div class="row course-grid">';
+                foreach($courses as $course){
+                    $fullcourse=$DB->get_record('course',array('id'=>$course->id));
+                    if ($course instanceof stdClass) {
+            require_once($CFG->libdir. '/coursecatlib.php');
+            $course = new course_in_list($course);
+        }
+        $content = '';
+        // Display course overview files.
+        $contentimages = $contentfiles = '';
+        foreach ($course->get_course_overviewfiles() as $file) {
+            $isimage = $file->is_valid_image();
+            $url = file_encode_url("$CFG->wwwroot/pluginfile.php",
+                    '/'. $file->get_contextid(). '/'. $file->get_component(). '/'.
+                    $file->get_filearea(). $file->get_filepath(). $file->get_filename(), !$isimage);
+            if ($isimage) {
+                    $contentimages .= html_writer::start_tag('div', array('class' => 'imagebox'));
+                    $images = html_writer::empty_tag('img', array('src' => $url, 'alt' => 'Course Image '. $course->fullname,
+                        'class' => 'courseimage'));
+                    $contentimages .= html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)), $images);
+                    $contentimages .= html_writer::end_tag('div');
+            } else {
+                $image = $this->output->pix_icon(file_file_icon($file, 24), $file->get_filename(), 'moodle');
+                $filename = html_writer::tag('span', $image, array('class' => 'fp-icon')).
+                        html_writer::tag('span', $file->get_filename(), array('class' => 'fp-filename'));
+                $contentfiles .= html_writer::tag('span',
+                        html_writer::link($url, $filename),
+                        array('class' => 'coursefile fp-filename-icon'));
             }
-            ?>
-          
+        }
+                    if(!$isimage){
+                        $url='http://ec2-204-236-215-10.compute-1.amazonaws.com/theme/remui/data/nopic.jpg';
+                    }
+                    
+                    echo'
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box box-shadow">
+                      <div class="box-header no-padding wdm-course-img" style="background-image: url('.$url.');
+                                    background-size: cover;
+                                    background-position: center">
+                          <div class="wdm-course-img-info">
+                            <h3><a href="/course/view.php?id='.$course->id.'">View Course</a></h3>
+                          </div>
+                      </div>
+
+                      <div class="box-body text-muted" style="min-height: 133px;">
+                        <h4>
+                        <a class="wdm_course" href="/course/view.php?id='.$course->id.'" title="'.$course->fullname.'">'.$course->fullname.'                        </a>
+                        </h4>
+                          '.$course->summary.'                      </div>
+                      <!-- /.box-body -->
+                      <a href="/course/view.php?id='.$course->id.'" class="btn btn-primary">Launch Course</a>
+                    </div>
+                </div>
+                    ';
+                    
+                }
+            }
+                    echo'</div>'?>
+                </div>
+            </div>
+          <div class="row">
+                <div class="col-lg-12">
+                   <h2>ABOUT SAGE CAMPUS</h2>
+                    <a name="about"></a>
+                    <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
+                </div>
+            </div>
+              
+              <div class="row">
+                <div class="col-lg-12">
+                    <h2>My Courses</h2>
+                    <a name="mycourses"></a>
+                </div>
+              </div>
+
 		    
 <div class="row">
                 <div class="col-lg-12">
                     <h2>Frequently Asked Questions</h2>
+                    <a name="faqs"></a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="heading1">
@@ -368,20 +441,18 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 </div>
             </div>
 		    
-		    <div id="region-main" class="default-section">
+		    <div id="region-main" class="default-section" style="display:none">
 		        <?php echo $OUTPUT->main_content(); ?>
 		    </div>
             
+            
+
             <div class="row">
                 <div class="col-lg-12">
-                   <h2>ABOUT SAGE CAMPUS</h2><p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
-                </div>
-            </div>
-
-            <div class="row pad-20">
                 <h2>Contact Us</h2>
+                    <a name="contactus"></a> 
                 <p>For technical support please contact <a href="mailto:email@email.com">email@email.com</a></p>
-                
+                </div>
             </div>
 
 		    <!-- frontpage recent blog -->
