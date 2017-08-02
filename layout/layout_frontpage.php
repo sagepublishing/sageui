@@ -216,7 +216,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content ">
-						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection1; ?></p>
+						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection1; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext1) && !empty($sectionbuttonlink1)) { ?>
@@ -235,7 +235,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content">
-						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection2; ?></p>
+						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection2; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext2) && !empty($sectionbuttonlink2)) { ?>
@@ -256,7 +256,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection3; ?></p>
+						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection3; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext3) && !empty($sectionbuttonlink3)) { ?>
@@ -276,7 +276,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection4; ?></p>
+						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection4; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext4) && !empty($sectionbuttonlink4)) { ?>
