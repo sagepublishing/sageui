@@ -65,3 +65,12 @@ li[data-key="7"],.main-sidebar .sidebar-menu li:nth-child(2){
     background-color:#499e37;
     color:#fff;
 }
+
+.title-desc-wrapper.over-image.no-main-image {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    max-height: 50px !important;
+}
+.title--description-position-over-image .title-desc-wrapper:not(.has-main-image) {
+    background-color: #555;
+}

@@ -288,6 +288,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
 		    </div> <!-- general sections end -->                   
                 </div>
             </div>
+            <div class="title-desc-wrapper over-image no-main-image">
+
+
+      <div class="title-desc-inner">
+      </div>
+    
+    </div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
@@ -356,6 +363,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     echo'</div>'?>
                 </div>
             </div>
+            <div class="title-desc-wrapper over-image no-main-image">
+
+
+      <div class="title-desc-inner">
+      </div>
+    
+    </div>
           <div class="row">
                 <div class="col-lg-12">
                    <h2>ABOUT SAGE CAMPUS</h2>
@@ -363,7 +377,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
                 </div>
             </div>
-		    
+		  <div class="title-desc-wrapper over-image no-main-image">
+
+
+      <div class="title-desc-inner">
+      </div>
+    
+    </div>  
 <div class="row">
                 <div class="col-lg-12">
                     <h2>Frequently Asked Questions</h2>
@@ -434,7 +454,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
 		    </div>
             
             
+<div class="title-desc-wrapper over-image no-main-image">
 
+
+      <div class="title-desc-inner">
+      </div>
+    
+    </div>
             <div class="row">
                 <div class="col-lg-12">
                 <h2>Contact Us</h2>
