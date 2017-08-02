@@ -295,7 +295,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
       </div>
     
     </div>
-            <div class="row">
+            <div class="row pad-20">
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
                     <a name="mycourses"></a>
@@ -370,7 +370,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
       </div>
     
     </div>
-          <div class="row">
+          <div class="row pad-20">
                 <div class="col-lg-12">
                    <h2>ABOUT SAGE CAMPUS</h2>
                     <a name="about"></a>
@@ -384,7 +384,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
       </div>
     
     </div>  
-<div class="row">
+<div class="row pad-20">
                 <div class="col-lg-12">
                     <h2>Frequently Asked Questions</h2>
                     <a name="faqs"></a>
@@ -461,7 +461,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
       </div>
     
     </div>
-            <div class="row">
+            <div class="row pad-20">
                 <div class="col-lg-12">
                 <h2>Contact Us</h2>
                     <a name="contactus"></a> 

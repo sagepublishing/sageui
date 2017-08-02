@@ -33,7 +33,7 @@ h2{
 }
 
 .header-category {
-    min-height: 300px;
+    min-height: 280px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 -25px;
@@ -70,7 +70,32 @@ li[data-key="7"],.main-sidebar .sidebar-menu li:nth-child(2){
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     max-height: 50px !important;
-}
-.title--description-position-over-image .title-desc-wrapper:not(.has-main-image) {
     background-color: #555;
 }
+
+/* Adding Proxima Nova */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
+    src: url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff2') format('woff2'),
+         url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
+         url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+         url('sageui/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,body{
+        font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #333 !important;
+}
+
+body{font-size:16px;}
+h1{font-size:35px;}
+h2{font-size:22px;}
+h3{font-size:20px;}
+h4{font-size:16px;}
