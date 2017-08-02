@@ -80,7 +80,7 @@ $frontpageaboutustext =  \theme_remui\toolbox::get_setting('frontpageaboutustext
 // If specified 0 no recent blog will be skipped.
 // @param int $blogcount number of blog posts to be return.
 $recentblogs = \theme_remui\controller\theme_controller::get_recent_blog(0, 4);
-
+$url='http://via.placeholder.com/700x300';
 $PAGE->set_popup_notification_allowed(false);
 echo $OUTPUT->doctype();
 ?>
@@ -169,10 +169,10 @@ echo $OUTPUT->doctype();
                 <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
     <div class="container-fluid" style="max-width:1300px;">
 	<div class="row">
-		<div class="col-lg-12 text-center product-speech">
+		<div class="col-lg-12 product-speech">
 <div class="jumbotron" style="background: rgba(0,0,0,.65);margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 15%;">
+    margin-left: 3%;
+    margin-right: 35%;">
   
   <h2 class="white">Learn Data Science Online.<br />
 Courses by Social Scientists, for Social Scientists.</h2>
@@ -216,8 +216,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content ">
-						<p><?php echo $frontpageblocksection1; ?></p>
-						<div class="description"><?php echo $frontpageblockdescriptionsection1; ?></div>
+						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection1; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext1) && !empty($sectionbuttonlink1)) { ?>
@@ -236,8 +235,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content">
-						<p><?php echo $frontpageblocksection2; ?></p>
-						<div class="description"><?php echo $frontpageblockdescriptionsection2; ?></div>
+						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection2; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext2) && !empty($sectionbuttonlink2)) { ?>
@@ -258,8 +256,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p><?php echo $frontpageblocksection3; ?></p>
-						<div class="description"><?php echo $frontpageblockdescriptionsection3; ?></div>
+						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection3; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext3) && !empty($sectionbuttonlink3)) { ?>
@@ -279,8 +276,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p><?php echo $frontpageblocksection4; ?></p>
-						<div class="description"><?php echo $frontpageblockdescriptionsection4; ?></div>
+						<p style="font-size: 1.5em;"><?php echo $frontpageblocksection4; ?></p>
 					</div>
 
 					<?php if (!empty($sectionbuttontext4) && !empty($sectionbuttonlink4)) { ?>
