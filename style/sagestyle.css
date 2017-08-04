@@ -84,5 +84,7 @@ h3{font-size:20px;}
 h4{font-size:16px;}
 
 .divider{
-    max-height: 50px!important;
-    background-color: #555;}
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
