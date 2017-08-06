@@ -438,7 +438,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 <div class="col-lg-12">
                 <h2>Contact Us</h2>
                     <a name="contactus"></a> 
-                <p>For technical support please contact <a href="mailto:email@email.com">email@email.com</a></p>
+                <p>For technical support please contact <a href="campus.info@sagepub.com">campus.info@sagepub.com</a></p>
                 </div>
             </div>
 
