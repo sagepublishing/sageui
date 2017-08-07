@@ -54,17 +54,6 @@ h2{
     color: #fff !important;
 }
 
-/*left nav changes*/
-li[data-key="7"],.main-sidebar, #page-site-index.sidebar-menu li:nth-child(2), #page-site-index.sidebar-menu li:nth-child(3),li[data-key="5"]{
-    display: none;
-}
-
-
-
-#page-course-view-topics ul.sidebar-menu {
-    background-color: #eeeeee!important;
-}
-
 /*Styling by brand*/
 .btn-primary{
     background-color:#48d491;
