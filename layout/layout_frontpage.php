@@ -102,7 +102,8 @@ echo $OUTPUT->doctype();
       echo $OUTPUT->standard_top_of_body_html();
 
       // Include header navigation
-      include(dirname(__FILE__)."/partials/header.php");
+            require_once(\theme_remui\controller\theme_controller::get_partial_element('header'));
+
 
       // Include main sidebar.
       require_once(\theme_remui\controller\theme_controller::get_partial_element('pre-aside'));
