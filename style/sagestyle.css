@@ -56,9 +56,11 @@ h2{
 }
 
 /*left nav changes*/
-li[data-key="7"],.main-sidebar .sidebar-menu li:nth-child(2){
+li[data-key="7"],.main-sidebar, #page-site-index.sidebar-menu li:nth-child(2), #page-site-index.sidebar-menu li:nth-child(3),li[data-key="5"]{
     display: none;
 }
+
+
 
 #page-course-view-topics ul.sidebar-menu {
     background-color: #eeeeee!important;
@@ -70,11 +72,9 @@ li[data-key="7"],.main-sidebar .sidebar-menu li:nth-child(2){
     color:#fff;
 }
 
-.title-desc-wrapper.over-image.no-main-image {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    max-height: 50px !important;
-    background-color: #555;
+button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {
+    background-color:#48d491;
+	color:#fff;
 }
 
 h1, h2, h3, h4 {
@@ -113,8 +113,7 @@ img.iconlarge {
     height: 50px;
 }
 
-ul.sidebar-menu.activities 
-img.iconlarge {
+.iconlarge.activityicon {
     width: 24px;
     height: 24px;
 }
