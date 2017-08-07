@@ -102,7 +102,7 @@ echo $OUTPUT->doctype();
       echo $OUTPUT->standard_top_of_body_html();
 
       // Include header navigation
-      require_once(\theme_remui\controller\theme_controller::get_partial_element('header'));
+      include(dirname(__FILE__)."/partials/header.php");
 
       // Include main sidebar.
       require_once(\theme_remui\controller\theme_controller::get_partial_element('pre-aside'));
@@ -295,6 +295,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     <a name="mycourses"></a>
                     <p>This is a standard message we display to users about courses. Something about if you don't see courses what email to contact etc etc.</p>
               <?php 
+			  global $DB;
                     $courses = enrol_get_all_users_courses($USER->id, TRUE, array('format', 'summary', 'summaryformat'));
             if(count($courses)>=1){
                 echo'<div class="row course-grid">';

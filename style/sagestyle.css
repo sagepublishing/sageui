@@ -112,3 +112,9 @@ img.iconlarge {
     width: 50px;
     height: 50px;
 }
+
+ul.sidebar-menu.activities 
+img.iconlarge {
+    width: 24px;
+    height: 24px;
+}
