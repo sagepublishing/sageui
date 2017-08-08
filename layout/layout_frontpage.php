@@ -355,8 +355,9 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     ';
                     
                 }
+				echo'</div>';
             }
-                    echo'</div>'?>
+                    ?>
                 </div>
             </div>
             <hr class="divider">
@@ -364,7 +365,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 <div class="col-lg-12">
                    <h2>ABOUT SAGE CAMPUS</h2>
                     <a name="about"></a>
-                    <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br><p></p
+                    <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br>
                 </div>
             </div> 
               <hr class="divider">
