@@ -1,0 +1,102 @@
+nav.navbar.navbar-static-top, .main-header .logo {
+    background-color: #ffffff !important;
+-webkit-box-shadow:0px 1px 1px #333;
+ -moz-box-shadow:0px 1px 1px #333;
+ box-shadow:0px 1px 1px #333;
+color:#000;
+}
+
+nav.navbar.navbar-static-top {
+    background-color: #ffffff !important;
+-webkit-box-shadow:0px 1px 1px #333;
+ -moz-box-shadow:0px 1px 1px #333;
+ box-shadow:0px 1px 1px #333;
+color:#000;
+}
+
+.main-header .navbar .nav>li>a, .main-header .navbar .sidebar-toggle, .main-header .navbar .sidebar-toggle, .navbar .popover-region-toggle {
+    color: #000 !important;
+}
+
+.skin-blue .main-header, .skin-blue .main-header .logo{
+    background-color: white !important;
+}
+
+.main-footer,  .main-footer a {
+    color: #888 !important;
+    background: #f7f7f7 !important
+}
+
+/* Removing underline from header*/
+h2{
+    background:none !important;
+}
+
+.header-category {
+    min-height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+/*adding frontpage box styling */
+.row.wdm_generalbox .iconbox {
+   background-color: #f7f7f7;
+    font-size:1.2em;
+}
+.row.wdm_generalbox .iconbox:hover {
+   background-color: #48d491;
+    color:#fff!important;
+}
+.row.wdm_generalbox .iconbox .iconbox-content h4:hover,.row.wdm_generalbox .iconbox .iconbox-content h4 {
+    color: #fff;
+}
+.white{
+    color: #fff !important;
+}
+
+/*Styling by brand*/
+.btn-primary{
+    background-color:#48d491;
+    color:#fff;
+}
+
+button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {
+    background-color:#48d491;
+	color:#fff;
+}
+
+h1, h2, h3, h4 {
+    color: #333 !important;
+}
+   @font-face { /* where FontName and fontname represents the name of the font you want to add */
+     font-family: 'roboto_condensedregular';
+     src: url([[font:theme|RobotoCondensed-Regular-webfont.eot]]);
+     src: url([[font:theme|RobotoCondensed-Regular-webfont.eot]]) format('embedded-opentype'),
+          url([[font:theme|RobotoCondensed-Regular-webfont.woff]]) format('woff'),
+          url([[font:theme|RobotoCondensed-Regular-webfont.ttf]]) format('truetype'),
+          url([[font:theme|RobotoCondensed-Regular-webfont.svg]]) format('svg');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+body{font-size:16px;
+			font-family: 'roboto_condensedregular';
+}
+h1{font-size:35px;}
+h2{font-size:22px;}
+h3{font-size:20px;}
+h4{font-size:16px;}
+
+
+.divider{
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+/* Making icons larger */
+
+img.iconlarge {
+    width: 50px;
+    height: 50px;
+}
