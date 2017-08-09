@@ -14,6 +14,10 @@ nav.navbar.navbar-static-top {
 color:#000;
 }
 
+li[data-key="7"],li[data-key="privatefiles"] {
+    display: none;
+}
+
 .main-header .navbar .nav>li>a, .main-header .navbar .sidebar-toggle, .main-header .navbar .sidebar-toggle, .navbar .popover-region-toggle {
     color: #000 !important;
 }
@@ -50,6 +54,7 @@ h2{
 .row.wdm_generalbox .iconbox .iconbox-content h4:hover,.row.wdm_generalbox .iconbox .iconbox-content h4 {
     color: #fff;
 }
+
 .white{
     color: #fff !important;
 }
