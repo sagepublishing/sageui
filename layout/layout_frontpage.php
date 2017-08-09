@@ -80,12 +80,12 @@ $frontpageaboutustext =  \theme_remui\toolbox::get_setting('frontpageaboutustext
 // If specified 0 no recent blog will be skipped.
 // @param int $blogcount number of blog posts to be return.
 $recentblogs = \theme_remui\controller\theme_controller::get_recent_blog(0, 4);
-$url='http://via.placeholder.com/700x300';
+
 $PAGE->set_popup_notification_allowed(false);
 echo $OUTPUT->doctype();
 ?>
 
-<html <?php echo $OUTPUT->htmlattributes(); ?> >
+<html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
   <title><?php echo $OUTPUT->page_title(); ?></title>
   <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon() ?>"/>
@@ -94,7 +94,7 @@ echo $OUTPUT->doctype();
   <?php echo $OUTPUT->standard_head_html(); ?>
 </head>
 
-<body <?php echo $OUTPUT->body_attributes(); ?> >
+<body <?php echo $OUTPUT->body_attributes(); ?>>
 
   <div class="wrapper"> <!-- main page wrapper -->
 
@@ -102,8 +102,7 @@ echo $OUTPUT->doctype();
       echo $OUTPUT->standard_top_of_body_html();
 
       // Include header navigation
-            require_once(\theme_remui\controller\theme_controller::get_partial_element('header'));
-
+      require_once(\theme_remui\controller\theme_controller::get_partial_element('header'));
 
       // Include main sidebar.
       require_once(\theme_remui\controller\theme_controller::get_partial_element('pre-aside'));
@@ -166,29 +165,15 @@ echo $OUTPUT->doctype();
 				    </div>
 				<?php } else {
 				?>
-                
-                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
-    <div class="container-fluid" style="max-width:1300px;">
-	<div class="row">
-		<div class="col-lg-12 product-speech">
-<div class="jumbotron" style="background: rgba(0,0,0,.65);margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 35%;">
-  
-  <h2 class="white">Learn Data Science Online.<br />
-Courses by Social Scientists, for Social Scientists.</h2>
-</div>
-        </div>
-	</div>
-    <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6 text-center">  
-               
-        </div>
-        <div class="col-lg-3"></div>
-    </div>
-    </div>	
-</div>
+				        <div class="wdm_static_image text-center" style="background-image: url(<?php echo $sliderdata['staticimage']; ?>); background-size: cover; background-position: center;">
+				            <a href="#">
+					          	<h2 class="wdm_static_image_text">
+						        	<span class="">
+										<?php echo $sliderdata['addtxt']; ?>
+						        	</span>
+						        </h2>
+					        </a>
+				        </div>
 				<?php }
 				    }
 				}// End of checking of sliderdata contains value or not
@@ -196,39 +181,28 @@ Courses by Social Scientists, for Social Scientists.</h2>
 		  	</div>
 
 		  	<!-- general sections -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>Some Header</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra nulla eros, vel pretium elit egestas eu. In hac habitasse platea dictumst. Donec eu libero nec tortor sagittis accumsan. Nullam vitae auctor mauris, sed cursus metus. Fusce consequat condimentum nisl a sollicitudin.
-                    <p>Nam cursus imperdiet tortor, nec laoreet nunc auctor quis. Morbi dapibus velit nisl, vel aliquam tortor faucibus eu. Morbi efficitur mattis volutpat. Vestibulum eget ornare tortor. Nam id pharetra metus. Morbi hendrerit ac est sit amet ultrices. Morbi enim turpis, pharetra sed dui at, ullamcorper mollis mauris. Duis iaculis efficitur lacus, in mattis velit tincidunt at.
-                    </p>                 
-                </div>
-                <div class="col-lg-8">
-                 <div class="row wdm_generalbox">
+		    <div class="row wdm_generalbox">
 				<?php if (!empty($frontpageblocksection1) && !empty($frontpageblockdescriptionsection1)) {
 				?>
-                     <a href="#mycourses">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			      <div class="iconbox span3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection1)) { ?>
 						<div class="iconcircle">
 						<i class="fa fa-<?php echo $frontpageblockiconsection1; ?>"></i>
 						</div>
 					<?php } ?>
 			          
-					<div class="iconbox-content ">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection1; ?></p>
+					<div class="iconbox-content text-center">
+						<h4><?php echo $frontpageblocksection1; ?></h4>
+						<div class="description"><?php echo $frontpageblockdescriptionsection1; ?></div>
 					</div>
 
 					<?php if (!empty($sectionbuttontext1) && !empty($sectionbuttonlink1)) { ?>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink1;?>" target="_blank"><?php echo $sectionbuttontext1; ?></a>
 					<?php } ?>
 			      </div>
-                     </a>
 				<?php } if (!empty($frontpageblocksection2) && !empty($frontpageblockdescriptionsection2)) {
 				?>
-                     <a href="#aboutus">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			      <div class="iconbox span3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection2)) { ?>
 						<div class="iconcircle">
 						<i class="fa fa-<?php echo $frontpageblockiconsection2; ?>"></i>
@@ -236,19 +210,18 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 			          
 					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection2; ?></p>
+						<h4><?php echo $frontpageblocksection2; ?></h4>
+						<div class="description"><?php echo $frontpageblockdescriptionsection2; ?></div>
 					</div>
 
 					<?php if (!empty($sectionbuttontext2) && !empty($sectionbuttonlink2)) { ?>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink2;?>" target="_blank"><?php echo $sectionbuttontext2; ?></a>
 					<?php } ?>
 			      </div>
-                     </a>
 				<?php }
 				if (!empty($frontpageblocksection3) && !empty($frontpageblockdescriptionsection3)) {
 				?>
-                     <a href="#faqs">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			      <div class="iconbox span3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					
 					<?php if(!empty($frontpageblockiconsection3)) { ?>
 						<div class="iconcircle">
@@ -257,19 +230,18 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection3; ?></p>
+						<h4><?php echo $frontpageblocksection3; ?></h4>
+						<div class="description"><?php echo $frontpageblockdescriptionsection3; ?></div>
 					</div>
 
 					<?php if (!empty($sectionbuttontext3) && !empty($sectionbuttonlink3)) { ?>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink3;?>" target="_blank"><?php echo $sectionbuttontext3; ?></a>
 					<?php } ?>
 			      </div>
-                     </a>
 				<?php }
 				if (!empty($frontpageblockiconsection4) && !empty($frontpageblocksection4) && !empty($frontpageblockdescriptionsection4)) {
 				?>
-                     <a href="#contactus">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			      <div class="iconbox span3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection4)) { ?>
 						<div class="iconcircle">
 						<i class="fa fa-<?php echo $frontpageblockiconsection4; ?>"></i>
@@ -277,99 +249,18 @@ Courses by Social Scientists, for Social Scientists.</h2>
 					<?php } ?>
 
 					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection4; ?></p>
+						<h4><?php echo $frontpageblocksection4; ?></h4>
+						<div class="description"><?php echo $frontpageblockdescriptionsection4; ?></div>
 					</div>
 
 					<?php if (!empty($sectionbuttontext4) && !empty($sectionbuttonlink4)) { ?>
 						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink4;?>" target="_blank"><?php echo $sectionbuttontext4; ?></a>
 					<?php } ?>
 			      </div>
-                     </a>
 				<?php } ?>
-		    </div> <!-- general sections end -->                   
-                </div>
-            </div>
-            <hr class="divider">
-            <div class="row pad-20">
-                <div class="col-lg-12">
-                    <h2>My Courses</h2>
-                    <a name="mycourses"></a>
-                    <p>This is a standard message we display to users about courses. Something about if you don't see courses what email to contact etc etc.</p>
-              <?php 
-			  global $DB;
-                    $courses = enrol_get_all_users_courses($USER->id, TRUE, array('format', 'summary', 'summaryformat'));
-            if(count($courses)>=1){
-                echo'<div class="row course-grid">';
-                foreach($courses as $course){
-                    $fullcourse=$DB->get_record('course',array('id'=>$course->id));
-                    if ($course instanceof stdClass) {
-            require_once($CFG->libdir. '/coursecatlib.php');
-            $course = new course_in_list($course);
-        }
-        $content = '';
-        // Display course overview files.
-        $contentimages = $contentfiles = '';
-        foreach ($course->get_course_overviewfiles() as $file) {
-            $isimage = $file->is_valid_image();
-            $url = file_encode_url("$CFG->wwwroot/pluginfile.php",
-                    '/'. $file->get_contextid(). '/'. $file->get_component(). '/'.
-                    $file->get_filearea(). $file->get_filepath(). $file->get_filename(), !$isimage);
-            if ($isimage) {
-                    $contentimages .= html_writer::start_tag('div', array('class' => 'imagebox'));
-                    $images = html_writer::empty_tag('img', array('src' => $url, 'alt' => 'Course Image '. $course->fullname,
-                        'class' => 'courseimage'));
-                    $contentimages .= html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)), $images);
-                    $contentimages .= html_writer::end_tag('div');
-            } else {
-                $url='http://ec2-204-236-215-10.compute-1.amazonaws.com/theme/remui/data/nopic.jpg';
-                $image = $this->output->pix_icon(file_file_icon($file, 24), $file->get_filename(), 'moodle');
-                $filename = html_writer::tag('span', $image, array('class' => 'fp-icon')).
-                        html_writer::tag('span', $file->get_filename(), array('class' => 'fp-filename'));
-                $contentfiles .= html_writer::tag('span',
-                        html_writer::link($url, $filename),
-                        array('class' => 'coursefile fp-filename-icon'));
-            }
-        }
-                    
-                    echo'
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="box box-shadow">
-                      <div class="box-header no-padding wdm-course-img" style="background-image: url('.$url.');
-                                    background-size: cover;
-                                    background-position: center">
-                          <div class="wdm-course-img-info">
-                            <h3><a href="/course/view.php?id='.$course->id.'">View Course</a></h3>
-                          </div>
-                      </div>
+		    </div> <!-- general sections end -->
 
-                      <div class="box-body text-muted" style="min-height: 133px;">
-                        <h4>
-                        <a class="wdm_course" href="/course/view.php?id='.$course->id.'" title="'.$course->fullname.'">'.$course->fullname.'                        </a>
-                        </h4>
-                          '.$course->summary.'                      
-                           <a href="/course/view.php?id='.$course->id.'" class="btn btn-primary">Launch Course</a></div>
-                      <!-- /.box-body -->
-                     
-                    </div>
-                </div>
-                    ';
-                    
-                }
-				echo'</div>';
-            }
-                    ?>
-                </div>
-            </div>
-            <hr class="divider">
-          <div class="row pad-20">
-                <div class="col-lg-12">
-                   <h2>ABOUT SAGE CAMPUS</h2>
-                    <a name="about"></a>
-                    <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br>
-                </div>
-            </div> 
-              <hr class="divider">
-<div class="row pad-20">
+		   <div class="row pad-20">
                 <div class="col-lg-12">
                     <h2>Frequently Asked Questions</h2>
                     <a name="faqs"></a>
@@ -445,16 +336,36 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 </div>
             </div>
 
+	    	<!-- about us section -->
+		    <?php if ( \theme_remui\toolbox::get_setting('enablefrontpageaboutus') === "1" && !empty($frontpageaboutusheading) && !empty($frontpageaboutustext)) { ?>
+		        <div class="row about-us text-center pad-20">
+			        <?php if ($frontpageaboutusimage == null) { ?>
+			          	<div class="col-md-12 about-us-text">
+			            	<h2 class="section-heading no-margin"><?php echo $frontpageaboutusheading; ?></h2>
+			            	<div class="margin-t-5 text-muted"><?php echo  $frontpageaboutustext; ?></div>
+			          	</div>
+			        <?php } else { ?>
+			        	<div class="col-md-7 about-us-text">
+				            <h2 class="section-heading no-margin"><?php echo $frontpageaboutusheading; ?></h2>
+				            <div class="margin-t-5 text-muted"><?php echo  $frontpageaboutustext; ?></div>
+				        </div>
+				        <div class="col-md-4 col-md-offset-1 about-us-img">
+				            <img src='<?php echo $frontpageaboutusimage; ?>' class='img-responsive margin-auto' alt='About US'>
+				        </div>
+			        <?php } ?>
+		        </div>
+		    <?php } ?>
+
 		    <!-- frontpage recent blog -->
 		    <?php if (isloggedin() && !empty($CFG->enableblogs) && is_array($recentblogs) && !empty($recentblogs)) { ?>
 		      <div class="row blog">
 		        <!-- Carousel -->
-		        <h2 class="">Recent blogs</h2> <br />
+		        <h2 class="text-center">Recent blogs</h2> <br />
 		            <?php foreach ($recentblogs as $key => $recentblog) {
 		                $link = $CFG->wwwroot.'/blog/index.php?entryid='.$recentblog['id'];
 		            ?>
 		            <div class="col-md-3 col-sm-4 recent-item">
-		                    <div class ="wdm-recent-item-blog "style="background-image: url(<?php echo $recentblog['imagesrc']; ?>);
+		                    <div class ="wdm-recent-item-blog text-center"style="background-image: url(<?php echo $recentblog['imagesrc']; ?>);
 		                        background-size: cover;
 		                        background-position: center; height:200px">
 		                        <div class="wdm-recent-item-blog-info">
