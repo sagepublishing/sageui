@@ -106,6 +106,10 @@ img.iconlarge {
     height: 50px;
 }
 
+.activity img.activityicon {
+    width: 24px;
+    height: 24px;
+}
 a.remui-back-to-top.moodle-has-zindex i {
     color: black;
     font-weight: bold;
@@ -117,4 +121,9 @@ a.remui-back-to-top.moodle-has-zindex i {
 }
 .panel-default>.panel-heading:hover {
     background-color: #48d491;
+}
+
+a.remui-back-to-top.moodle-has-zindex i {
+    color: #000;
+    font-weight: bold;
 }
