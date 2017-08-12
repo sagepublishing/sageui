@@ -102,11 +102,10 @@ echo $OUTPUT->doctype();
       echo $OUTPUT->standard_top_of_body_html();
 
       // Include header navigation
-            require_once(\theme_remui\controller\theme_controller::get_partial_element('header'));
+            
+include(dirname(__FILE__) . "/partials/header.php");
 
-
-      // Include main sidebar.
-      require_once(\theme_remui\controller\theme_controller::get_partial_element('pre-aside'));
+include(dirname(__FILE__) . "/partials/pre-aside.php");
     ?>
 
     <!-- Content Wrapper. Contains page content -->
@@ -301,6 +300,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
             if(count($courses)>=1){
                 echo'<div class="row course-grid">';
                 foreach($courses as $course){
+					$url='';
                     $fullcourse=$DB->get_record('course',array('id'=>$course->id));
                     if ($course instanceof stdClass) {
             require_once($CFG->libdir. '/coursecatlib.php');

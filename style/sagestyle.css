@@ -105,3 +105,16 @@ img.iconlarge {
     width: 50px;
     height: 50px;
 }
+
+a.remui-back-to-top.moodle-has-zindex i {
+    color: black;
+    font-weight: bold;
+}
+
+.panel-default>.panel-heading a:hover {
+    color: white;
+    font-weight: bold;
+}
+.panel-default>.panel-heading:hover {
+    background-color: #48d491;
+}
