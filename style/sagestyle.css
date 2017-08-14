@@ -88,11 +88,17 @@ body{font-size:16px;
 			font-family: 'roboto_condensedregular';
 }
 h1{font-size:35px;}
-h2{font-size:22px;}
+h2{font-size:24px;}
 h3{font-size:20px;}
 h4{font-size:16px;}
 
+.jumbotron{
+background-color:rgba(61,62,67,0);
+}
 
+.pagelayout-frontpage .content-wrapper h2
+font-size:24px;
+}
 .divider{
     height: 10px;
     border: 0;

@@ -166,15 +166,15 @@ include(dirname(__FILE__) . "/partials/pre-aside.php");
 				<?php } else {
 				?>
                 
-                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
+                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
     <div class="container-fluid" style="max-width:1300px;">
 	<div class="row">
 		<div class="col-lg-12 product-speech">
 <div class="jumbotron" style="background: rgba(0,0,0,.65);margin-top: 3%;
     margin-left: 3%;
-    margin-right: 35%;">
+    margin-right: 35%;padding:15px;">
   
-  <h2 class="white">Learn Data Science Online.<br />
+  <h2 class="white" style="font-size:24px">Learn Data Science Online.<br />
 Courses by Social Scientists, for Social Scientists.</h2>
 </div>
         </div>
@@ -374,7 +374,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     <h2>Frequently Asked Questions</h2>
                     <a name="faqs"></a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
+    <div class="panel panel-default panel-clr">
         <div class="panel-heading" role="tab" id="heading1">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
@@ -388,7 +388,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default panel-clr">
         <div class="panel-heading" role="tab" id="heading2">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
@@ -402,7 +402,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default panel-clr">
         <div class="panel-heading" role="tab" id="heading3">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
@@ -416,7 +416,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default panel-clr">
         <div class="panel-heading" role="tab" id="heading4">
             <h4 class="panel-title">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
