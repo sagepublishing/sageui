@@ -128,3 +128,7 @@ a.remui-back-to-top.moodle-has-zindex i {
 .license-nag {
     display: none;
 }
+
+.sectionname.media-heading{
+    font-size:35px;
+}
