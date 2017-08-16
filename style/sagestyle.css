@@ -73,20 +73,7 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
 h1, h2, h3, h4 {
     color: #333 !important;
 }
-   @font-face { /* where FontName and fontname represents the name of the font you want to add */
-     font-family: 'roboto_condensedregular';
-     src: url([[font:theme|RobotoCondensed-Regular-webfont.eot]]);
-     src: url([[font:theme|RobotoCondensed-Regular-webfont.eot]]) format('embedded-opentype'),
-          url([[font:theme|RobotoCondensed-Regular-webfont.woff]]) format('woff'),
-          url([[font:theme|RobotoCondensed-Regular-webfont.ttf]]) format('truetype'),
-          url([[font:theme|RobotoCondensed-Regular-webfont.svg]]) format('svg');
-     font-weight: normal;
-     font-style: normal;
-   }
-   
-body{font-size:16px;
-			font-family: 'roboto_condensedregular';
-}
+
 h1{font-size:35px;}
 h2{font-size:24px;}
 h3{font-size:20px;}
@@ -96,7 +83,7 @@ h4{font-size:16px;}
 background-color:rgba(61,62,67,0);
 }
 
-.pagelayout-frontpage .content-wrapper h2
+.pagelayout-frontpage .content-wrapper h2{}
 font-size:24px;
 }
 .divider{
@@ -121,11 +108,15 @@ a.remui-back-to-top.moodle-has-zindex i {
     font-weight: bold;
 }
 
-.panel-default>.panel-heading a:hover, .panel-default>.panel-heading:hover a{
+.panel-default>.panel-heading a:hover, .panel-default>.panel-heading:hover a, .panel-heading.active a{
     color: white;
     font-weight: bold;
 }
 .panel-default>.panel-heading:hover {
+    background-color: #48d491;
+}
+
+.panel-heading.active{
     background-color: #48d491;
 }
 

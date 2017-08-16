@@ -92,6 +92,16 @@ echo $OUTPUT->doctype();
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
   <?php echo $OUTPUT->standard_head_html(); ?>
+    <script src="https://use.typekit.net/zfr1tsm.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+<script>
+    $( function() {
+  $('.panel-clr').click( function() {
+      $(this).toggleClass('on');
+} )
+});
+    </script>
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?> >
@@ -166,7 +176,7 @@ include(dirname(__FILE__) . "/partials/pre-aside.php");
 				<?php } else {
 				?>
                 
-                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:100% 100%;">
+                <div id="header-category" class="header-category" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0% 0%, transparent url(<?php echo $sliderdata['staticimage']; ?>) no-repeat scroll 0% 0%; background-size:cover;">
     <div class="container-fluid" style="max-width:1300px;">
 	<div class="row">
 		<div class="col-lg-12 product-speech">

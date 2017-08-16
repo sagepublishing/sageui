@@ -16,7 +16,7 @@ $THEME->name = 'sageui';
 // extensions.                                                                                                                      
 $THEME->sheets = ['sagestyle'];   
 
-$THEME->javascripts= ['sagescript'];
+$THEME->javascripts_footer= ['sagescript'];
  
 // This is a setting that can be used to provide some styling to the content in the TinyMCE text editor. This is no longer the      
 // default text editor and "Atto" does not need this setting so we won't provide anything. If we did it would work the same         
