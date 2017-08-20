@@ -353,10 +353,11 @@ Courses by Social Scientists, for Social Scientists.</h2>
                       </div>
 
                       <div class="box-body text-muted" style="min-height: 133px;">
+                      <div class="courses-title">
                         <h4>
                         <a class="wdm_course" href="/course/view.php?id='.$course->id.'" title="'.$course->fullname.'">'.$course->fullname.'                        </a>
                         </h4>
-                          '.$course->summary.'                      
+                        </div>
                            <a href="/course/view.php?id='.$course->id.'" class="btn btn-primary">Launch Course</a></div>
                       <!-- /.box-body -->
                      

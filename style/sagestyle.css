@@ -14,7 +14,9 @@ nav.navbar.navbar-static-top {
 color:#000;
 }
 
-li[data-key="7"],li[data-key="privatefiles"] {
+
+
+li[data-key="7"],li[data-key="privatefiles"], li[data-key="badgesview"],.pagelayout-course li[data-key="2"]{
     display: none;
 }
 
@@ -46,6 +48,7 @@ h2{
 .row.wdm_generalbox .iconbox {
    background-color: #f7f7f7;
     font-size:1.2em;
+    border: 3px solid #fff;
 }
 .row.wdm_generalbox .iconbox:hover {
    background-color: #48d491;
@@ -103,8 +106,11 @@ img.iconlarge {
     width: 24px;
     height: 24px;
 }
+a.remui-back-to-top.moodle-has-zindex {
+    background-color: #a31850;
+}
 a.remui-back-to-top.moodle-has-zindex i {
-    color: black;
+     color:#fff;
     font-weight: bold;
 }
 
@@ -118,11 +124,6 @@ a.remui-back-to-top.moodle-has-zindex i {
 
 .panel-heading.active{
     background-color: #48d491;
-}
-
-a.remui-back-to-top.moodle-has-zindex i {
-    color: #000;
-    font-weight: bold;
 }
 
 .license-nag {
