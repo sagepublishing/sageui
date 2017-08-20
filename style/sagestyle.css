@@ -145,3 +145,7 @@ a.remui-back-to-top.moodle-has-zindex i {
 .pagelayout-frontpage #frontpage-course-list{
     display:none;
 }
+
+.no-overflow{
+    overflow-x:hidden;
+}
