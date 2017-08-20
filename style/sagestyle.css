@@ -1,3 +1,7 @@
+body{
+    font-family: proxima-nova, sans-serif;
+}
+
 nav.navbar.navbar-static-top, .main-header .logo {
     background-color: #ffffff !important;
 -webkit-box-shadow:0px 1px 1px #333;
@@ -132,4 +136,12 @@ a.remui-back-to-top.moodle-has-zindex i {
 
 .sectionname.media-heading{
     font-size:35px;
+}
+
+.courses-title{
+    min-height:44px;
+}
+
+.pagelayout-frontpage #frontpage-course-list{
+    display:none;
 }

@@ -83,7 +83,8 @@ if (isloggedin() && !isguestuser()) {
 
 $isregistration = $DB->get_record('config', array('name' => 'registerauth'));
 ?>
-
+<script src="https://use.typekit.net/zfr1tsm.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!-- Main Header -->
 <header class="main-header moodle-has-zindex">
     <!-- logo -->

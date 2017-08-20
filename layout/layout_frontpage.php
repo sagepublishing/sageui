@@ -180,7 +180,7 @@ include(dirname(__FILE__) . "/partials/pre-aside.php");
     <div class="container-fluid" style="max-width:1300px;">
 	<div class="row">
 		<div class="col-lg-12 product-speech">
-<div class="jumbotron" style="background: rgba(0,0,0,.65);margin-top: 3%;
+<div class="jumbotron" style="background: rgba(0,0,0,.40);margin-top: 3%;
     margin-left: 3%;
     margin-right: 35%;padding:15px;">
   
@@ -371,81 +371,8 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     ?>
                 </div>
             </div>
-            <hr class="divider">
-          <div class="row pad-20">
-                <div class="col-lg-12">
-                   <h2>ABOUT SAGE CAMPUS</h2>
-                    <a name="about"></a>
-                    <p><strong>Welcome!<br>&nbsp;</strong><br>Here at SAGE&nbsp;Campus&nbsp;we’ve developed a suite of online courses to equip social scientists with data science skills.<br><strong>&nbsp;<br>Social Science Research is Changing<br>&nbsp;</strong><br>We understand that social science research is changing. The increasing availability of data and the development of new computational tools for data collection and analysis provide new opportunities for social science researchers. We want to help you gain the skills&nbsp;you need&nbsp;to embrace the data revolution, build a successful career and, ultimately, produce&nbsp;high quality&nbsp;social science research.</p><br>
-                </div>
-            </div> 
-              <hr class="divider">
-<div class="row pad-20">
-                <div class="col-lg-12">
-                    <h2>Frequently Asked Questions</h2>
-                    <a name="faqs"></a>
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default panel-clr">
-        <div class="panel-heading" role="tab" id="heading1">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    FAQ Question 1
-                </a>
-            </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-            <div class="panel-body">
-                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed eleifend magna. Duis sit amet lacus dictum, rhoncus leo quis, sagittis ante. Etiam suscipit laoreet felis, vel cursus felis facilisis ac. Integer in dignissim odio, sit amet ullamcorper eros. In tempor eu tortor condimentum venenatis. Sed semper et ex et sagittis.</p>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default panel-clr">
-        <div class="panel-heading" role="tab" id="heading2">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    FAQ Question 2
-                </a>
-            </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-            <div class="panel-body">
-                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed eleifend magna. Duis sit amet lacus dictum, rhoncus leo quis, sagittis ante. Etiam suscipit laoreet felis, vel cursus felis facilisis ac. Integer in dignissim odio, sit amet ullamcorper eros. In tempor eu tortor condimentum venenatis. Sed semper et ex et sagittis.</p>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default panel-clr">
-        <div class="panel-heading" role="tab" id="heading3">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    FAQ Question 3
-                </a>
-            </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-            <div class="panel-body">
-                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed eleifend magna. Duis sit amet lacus dictum, rhoncus leo quis, sagittis ante. Etiam suscipit laoreet felis, vel cursus felis facilisis ac. Integer in dignissim odio, sit amet ullamcorper eros. In tempor eu tortor condimentum venenatis. Sed semper et ex et sagittis.</p>
-            </div>
-        </div>
-    </div>
-    <div class="panel panel-default panel-clr">
-        <div class="panel-heading" role="tab" id="heading4">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    FAQ Question 4
-                </a>
-            </h4>
-        </div>
-        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-            <div class="panel-body">
-                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed eleifend magna. Duis sit amet lacus dictum, rhoncus leo quis, sagittis ante. Etiam suscipit laoreet felis, vel cursus felis facilisis ac. Integer in dignissim odio, sit amet ullamcorper eros. In tempor eu tortor condimentum venenatis. Sed semper et ex et sagittis.</p>
-            </div>
-        </div>
-    </div>
-</div>
-                </div>
-            </div>
 		    
-		    <div id="region-main" class="default-section" style="display:none">
+		    <div id="region-main" class="default-section">
 		        <?php echo $OUTPUT->main_content(); ?>
 		    </div>
             <div class="row pad-20">
