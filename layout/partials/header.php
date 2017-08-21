@@ -25,7 +25,7 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-global $DB, $USER, $OUTPUT;
+global $DB, $USER, $OUTPUT, $PAGE;
 
 $hasrightsideblocks = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 if ( \theme_remui\toolbox::get_setting('sidebar') == 'old') {
@@ -72,13 +72,23 @@ if (isloggedin() && !isguestuser()) {
     $coursearchive = new moodle_url('/course/index.php');
     $preferences = new moodle_url('/user/preferences.php');
     $switchroleurl ='';
-    $siteurl=$_SERVER['REQUEST_URI'];
-    $roleid = $DB->get_field('role', 'id', ['shortname' => 'editingteacher']);
-$isteacheranywhere = $DB->record_exists('role_assignments', ['userid' => $USER->id, 'roleid' => $roleid]);
+     $course = $PAGE->course;
+     $context = context_course::instance($course->id);
+    $roles = get_switchable_roles($context);
+         if (is_array($roles) && (count($roles) > 0)) {
+             $switchroleurl = new moodle_url('/course/switchrole.php', array(
+                 'id' => $course->id,
+                 'switchrole' => -1,
+                 'returnurl' => $page->url->out_as_local_url(false)
+             ));}
     
-      if(is_siteadmin()||$isteacheranywhere) {
-        $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => 1,'switchrole' => -1,'returnurl' => '/my/index.php'));
-      }
+      //if(is_siteadmin()) {
+        //$switchroleurl = new moodle_url('/course/switchrole.php', array('id' => 1,'switchrole' => -1,'returnurl' => '/my/index.php'));
+      //}
+    //else if($isteacheranywhere){
+      //  $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => $COURSE->id,'switchrole' => -1,'returnurl' => '/my/index.php'));
+        //switchrole.php?id=18&switchrole=-1&returnurl=%2Fcourse%2Fview.php%3Fid%3D18
+    //}
 } else {
     $userloginurl = new moodle_url('/login/index.php', array('alt' => get_string('login')));
     $forgotpasswordurl = new moodle_url('/login/forgot_password.php');
