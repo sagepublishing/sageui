@@ -72,7 +72,13 @@ if (isloggedin() && !isguestuser()) {
     $coursearchive = new moodle_url('/course/index.php');
     $preferences = new moodle_url('/user/preferences.php');
     $switchroleurl ='';
-      if(is_siteadmin()) {
+    $siteurl=$_SERVER['REQUEST_URI'];
+    if(strpos($siteurl,'course/view.php')){
+    $roleid = $DB->get_field('role', 'id', ['shortname' => 'editingteacher']);
+$isteacheranywhere = $DB->record_exists('role_assignments', ['userid' => $USER->id, 'roleid' => $roleid]);
+    }
+    
+      if(is_siteadmin()||$isteacheranywhere) {
         $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => 1,'switchrole' => -1,'returnurl' => '/my/index.php'));
       }
 } else {
