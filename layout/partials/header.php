@@ -25,7 +25,7 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-global $DB, $USER, $OUTPUT, $PAGE;
+global $DB, $USER, $OUTPUT;
 
 $hasrightsideblocks = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 if ( \theme_remui\toolbox::get_setting('sidebar') == 'old') {
@@ -72,16 +72,10 @@ if (isloggedin() && !isguestuser()) {
     $coursearchive = new moodle_url('/course/index.php');
     $preferences = new moodle_url('/user/preferences.php');
     $switchroleurl ='';
-    $roleid = $DB->get_field('role', 'id', ['shortname' => 'editingteacher']);
-$isteacheranywhere = $DB->record_exists('role_assignments', ['userid' => $USER->id, 'roleid' => $roleid]);
     
       if(is_siteadmin()) {
         $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => 1,'switchrole' => -1,'returnurl' => '/my/index.php'));
       }
-    else if($isteacheranywhere){
-        $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => $COURSE->id,'switchrole' => -1,'returnurl' => '/my/index.php'));
-        switchrole.php?id=18&switchrole=-1&returnurl=%2Fcourse%2Fview.php%3Fid%3D18
-    }
 } else {
     $userloginurl = new moodle_url('/login/index.php', array('alt' => get_string('login')));
     $forgotpasswordurl = new moodle_url('/login/forgot_password.php');
