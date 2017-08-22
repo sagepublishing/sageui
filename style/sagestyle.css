@@ -1,3 +1,5 @@
+[[setting:loginsettingpic]]
+
 body{
     font-family: proxima-nova, sans-serif;
 }
@@ -149,3 +151,5 @@ a.remui-back-to-top.moodle-has-zindex i {
 .no-overflow{
     overflow-x:hidden;
 }
+
+[[setting:customcss]]

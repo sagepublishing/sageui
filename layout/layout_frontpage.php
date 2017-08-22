@@ -207,11 +207,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
 		  	<!-- general sections -->
             <div class="row">
                 <div class="col-lg-4">
-                    <h2>Some Header</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra nulla eros, vel pretium elit egestas eu. In hac habitasse platea dictumst. Donec eu libero nec tortor sagittis accumsan. Nullam vitae auctor mauris, sed cursus metus. Fusce consequat condimentum nisl a sollicitudin.
-                    <p>Nam cursus imperdiet tortor, nec laoreet nunc auctor quis. Morbi dapibus velit nisl, vel aliquam tortor faucibus eu. Morbi efficitur mattis volutpat. Vestibulum eget ornare tortor. Nam id pharetra metus. Morbi hendrerit ac est sit amet ultrices. Morbi enim turpis, pharetra sed dui at, ullamcorper mollis mauris. Duis iaculis efficitur lacus, in mattis velit tincidunt at.
-                    </p>                 
+                    <?php echo $frontpageaboutustext;?>               
                 </div>
                 <div class="col-lg-8">
                  <div class="row wdm_generalbox">
