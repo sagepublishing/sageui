@@ -72,10 +72,6 @@ if (isloggedin() && !isguestuser()) {
     $coursearchive = new moodle_url('/course/index.php');
     $preferences = new moodle_url('/user/preferences.php');
     $switchroleurl ='';
-    $course = $page->course;
-> 
->     // Query the environment.
->     $context = context_course::instance($course->id);
       if(is_siteadmin()) {
         $switchroleurl = new moodle_url('/course/switchrole.php', array('id' => 1,'switchrole' => -1,'returnurl' => '/my/index.php'));
       }
