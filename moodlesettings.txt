@@ -1,0 +1,43 @@
+Moodle changes to make
+
+Language Pack
+component - core, string ID courses change to My Courses
+
+admin/settings.php?section=frontpagesettings
+Configure Full site name and short name
+setting frontpage and front page items when logged in set none for all boxes to ensure that nothing
+is printed on the frontpage apart from what we specify in the theme.
+include topic section should be ticked
+
+setting  to be set to site so that dashboard is ignored
+
+admin/category.php?category=theme_remui settings page for RemUI
+Important settings
+Choose layout= Default
+Select Sidebar = New Sidebar
+Enable left Sidear-mini = off
+Toggle Right Sidebar Skin = on
+Choose site logo format= Logo only
+Logim - load in sage campus logo image
+enable image on single course page = on
+favicon - load in favicon
+Font type selector = Standard Font
+HEADER CONTENT
+style = Static
+Select content type = image
+Upload image = image background for the banner
+BODY CONTENT
+Enable images on the front page courses = on
+Body tites for each of the icons and fontawesome selectors
+ABOUT US
+Enable about us = on
+About us text = text to go to the left of the icons
+LOGIN PAGE SETTINGS
+enable login popup = off
+upload background image - upload image file for login
+
+
+
+
+
+
