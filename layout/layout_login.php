@@ -70,12 +70,17 @@ echo $OUTPUT->doctype();
             <!-- Main content -->
             <section id="region-main" class="content wdm-login-content">
             <div class="row" id="login-img">
+                
             <?php if (!empty($logoorsitename)) {
             ?>
-              <div class="wdm-logo-wrapper" style="background-color:#fff">  <!-- adding the wrapper class so only image will be clickable instal whole header. -->
-                    <?php if ($logoorsitename == 'logo') { ?>
+                <div class="row">
+                    <div class="col-lg-4">
+                    
+                    </div>
+                    <div class="col-lg-4">
+                      <?php if ($logoorsitename == 'logo') { ?>
                     <a href="<?php echo $CFG->wwwroot; ?>" class="logo">
-                      <span class="logo-lg"><img alt="<?php echo format_string($SITE->shortname); ?>" src="<?php echo $logo;?>" /></span>
+                      <span class="logo-lg"><img class="img-responsive" alt="<?php echo format_string($SITE->shortname); ?>" src="<?php echo $logo;?>" /></span>
                     </a>
                 <?php } else if ($logoorsitename == 'sitename') { ?>
                   <h1>
@@ -96,6 +101,10 @@ echo $OUTPUT->doctype();
                 </h1>
         <?php } ?>
                     </div>
+                    <div class="col-lg-4">
+                    
+                    </div>
+                </div>
                     <?php } ?>
                         <?php echo $OUTPUT->course_content_header(); ?>
                         <?php echo $OUTPUT->main_content(); ?>
