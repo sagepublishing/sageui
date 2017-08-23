@@ -69,7 +69,10 @@ echo $OUTPUT->doctype();
                 <div><div class="singlebutton">
                     <div>
                   <?php 
-                      $course = $COURSE->id;
+                        $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+if (strpos($url,'/course/view.php') !== false) {
+     $course = $COURSE->id;
                 $context = context_course::instance($COURSE->id);
                       $roleswitcher = new stdClass();
                       if (is_role_switched($COURSE->id)) {
@@ -93,6 +96,8 @@ echo $OUTPUT->doctype();
               echo'<a href="'.$roleswitcher.'" class="btn btn-primary" style="    margin-top: 10px;">Switch Roles</a>';
          }
      }
+} 
+                     
                       
                       ?>
                    </div> 

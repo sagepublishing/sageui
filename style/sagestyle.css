@@ -156,4 +156,8 @@ a.remui-back-to-top.moodle-has-zindex i {
     float: right;
 }
 
+.moodle-actionmenu .menu-action-text{
+    display:block;
+}
+
 [[setting:customcss]]
