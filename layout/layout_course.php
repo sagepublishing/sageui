@@ -64,7 +64,40 @@ echo $OUTPUT->doctype();
                      }
                ?>
               <div class="action-buttons">
-                <div id="region-main-settings-menu" class="hidden-print">
+                  
+            <div id="region-main-settings-menu" class="hidden-print">
+                <div><div class="singlebutton">
+                    <div>
+                  <?php 
+                      $course = $COURSE->id;
+                $context = context_course::instance($COURSE->id);
+                      $roleswitcher = new stdClass();
+                      if (is_role_switched($COURSE->id)) {
+             $roleswitcher = new moodle_url('/course/switchrole.php', array(
+                 'id' => $COURSE->id,
+                 'sesskey' => sesskey(),
+                 'switchrole' => 0,
+                 'returnurl' => $PAGE->url->out_as_local_url(false)
+             ));
+                echo'<a href="'.$roleswitcher.'" class="btn btn-primary" style="    margin-top: 10px;">Return to Role</a>';
+         }
+     else {
+         // Build switch role link.
+         $roles = get_switchable_roles($context);
+         if (is_array($roles) && (count($roles) > 0)) {
+             $roleswitcher = new moodle_url('/course/switchrole.php', array(
+                 'id' => $COURSE->id,
+                 'switchrole' => -1,
+                 'returnurl' => $PAGE->url->out_as_local_url(false)
+             ));
+              echo'<a href="'.$roleswitcher.'" class="btn btn-primary" style="    margin-top: 10px;">Switch Roles</a>';
+         }
+     }
+                      
+                      ?>
+                   </div> 
+              </div>
+                </div>
                     <div>
                 	    <?php echo $OUTPUT->page_heading_button(); ?>
                       <?php  echo $regionmainsettingsmenu;?> 

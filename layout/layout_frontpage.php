@@ -299,7 +299,9 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
                     <a name="mycourses"></a>
-                    <p>This is a standard message we display to users about courses. Something about if you don't see courses what email to contact etc etc.</p>
+                    <p>You should be able to see your course three days before your course starts. If you don't drop us a message at <a href="mailto:campus,info@sagepub.co.uk">campus.info@sagepub.co.uk and we'll be able to help.
+
+</p>
               <?php 
 			  global $DB;
                     $courses = enrol_get_all_users_courses($USER->id, TRUE, array('format', 'summary', 'summaryformat'));

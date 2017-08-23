@@ -152,4 +152,8 @@ a.remui-back-to-top.moodle-has-zindex i {
     overflow-x:hidden;
 }
 
+.pagelayout-course .material-button-toggle {
+    float: right;
+}
+
 [[setting:customcss]]
