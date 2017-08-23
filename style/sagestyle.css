@@ -22,7 +22,7 @@ color:#000;
 
 
 
-li[data-key="7"],li[data-key="privatefiles"], li[data-key="badgesview"],.pagelayout-course li[data-key="2"]{
+li[data-key="7"],li[data-key="privatefiles"], li[data-key="badgesview"],.pagelayout-course li[data-key="2"], .pagelayout-course li[data-key="5"]{
     display: none;
 }
 
@@ -158,6 +158,8 @@ a.remui-back-to-top.moodle-has-zindex i {
 
 .moodle-actionmenu .menu-action-text{
     display:block;
+    text-align: center;
+    padding: 5px;
 }
 
 [[setting:customcss]]

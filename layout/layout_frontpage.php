@@ -299,7 +299,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 <div class="col-lg-12">
                     <h2>My Courses</h2>
                     <a name="mycourses"></a>
-                    <p>You should be able to see your course three days before your course starts. If you don't drop us a message at <a href="mailto:campus,info@sagepub.co.uk">campus.info@sagepub.co.uk and we'll be able to help.
+                    <p>You should be able to see your course three days before your course starts. If you don't drop us a message at <a href="mailto:campus,info@sagepub.com">campus.info@sagepub.com</a> and we'll be able to help.
 
 </p>
               <?php 
@@ -377,7 +377,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                 <div class="col-lg-12">
                 <h2>Contact Us</h2>
                     <a name="contactus"></a> 
-                <p>For technical support please contact <a href="campus.info@sagepub.com">campus.info@sagepub.com</a></p>
+                <p>For technical support please contact <a href="mailto:campus.info@sagepub.com">campus.info@sagepub.com</a></p>
                 </div>
             </div>
 

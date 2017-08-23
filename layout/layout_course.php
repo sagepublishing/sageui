@@ -112,6 +112,7 @@ if (strpos($url,'/course/view.php') !== false) {
               </div>
             </section>
 <?php 
+            if (strpos($url,'/course/view.php') !== false) {
             $url='';
                     $course=$DB->get_record('course',array('id'=>$COURSE->id));
                     if ($course instanceof stdClass) {
@@ -163,7 +164,7 @@ if (strpos($url,'/course/view.php') !== false) {
         <div class="col-lg-3"></div>
     </div>
     </div>	
-</div>
+</div><?php }?>
              <section class="content-breadcrumb">
               <ol class="breadcrumb">
                 <?php echo $OUTPUT->navbar(); ?>
