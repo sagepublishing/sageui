@@ -59,7 +59,7 @@ echo $OUTPUT->doctype();
     <?php echo $OUTPUT->standard_head_html(); ?>
   </head>
 
-  <body <?php echo $OUTPUT->body_attributes(); ?> style="background-color:inherit;">
+  <body <?php echo $OUTPUT->body_attributes(); ?> style=" background:none; background-color:inherit;">
 
     <div class="remui-wrapper" > <!-- main page wrapper -->
         <?php
