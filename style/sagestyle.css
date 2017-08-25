@@ -20,9 +20,7 @@ nav.navbar.navbar-static-top {
 color:#000;
 }
 
-
-
-li[data-key="7"],li[data-key="privatefiles"], li[data-key="badgesview"],.pagelayout-course li[data-key="2"], .pagelayout-course li[data-key="5"]{
+li[data-key="7"],li[data-key="privatefiles"], li[data-key="badgesview"],.pagelayout-course li[data-key="2"], .pagelayout-course li[data-key="5"], .pagelayout-frontpage li[data-key="5"], .pagelayout-incourse li[data-key="2"]{
     display: none;
 }
 

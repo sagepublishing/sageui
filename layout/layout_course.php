@@ -152,7 +152,7 @@ if (strpos($url,'/course/view.php') !== false) {
     margin-left: 3%;
     margin-right: 35%;padding:15px;">
   
-  <h2 class="white" style="font-size:24px"><?php echo $OUTPUT->page_title(); ?></h2>
+  <h2 class="white" style="font-size:24px"><?php echo $COURSE->fullname; ?></h2>
 </div>
         </div>
 	</div>
