@@ -101,7 +101,7 @@ font-size:24px;
 
 /* Making icons larger */
 
-img.iconlarge {
+img.iconlarge.activityicon {
     width: 50px;
     height: 50px;
 }
