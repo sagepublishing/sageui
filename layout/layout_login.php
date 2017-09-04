@@ -74,10 +74,10 @@ echo $OUTPUT->doctype();
             <?php if (!empty($logoorsitename)) {
             ?>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                     
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                       <?php if ($logoorsitename == 'logo') { ?>
                     <a href="<?php echo $CFG->wwwroot; ?>" class="logo">
                       <span class="logo-lg"><img class="img-responsive" alt="<?php echo format_string($SITE->shortname); ?>" src="<?php echo $logo;?>" /></span>
@@ -101,7 +101,7 @@ echo $OUTPUT->doctype();
                 </h1>
         <?php } ?>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                     
                     </div>
                 </div>
