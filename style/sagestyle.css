@@ -93,7 +93,7 @@ background-color:rgba(61,62,67,0);
 .pagelayout-frontpage .content-wrapper h2{}
 font-size:24px;
 }
-hr.divider{
+hr.divider, hr{
    border-bottom: 3px solid #48d491;
     margin-left: -20px;
     margin-right: -20px;
