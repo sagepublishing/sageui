@@ -77,7 +77,7 @@ echo $OUTPUT->doctype();
                     <div class="col-sm-4">
                     
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" style="background-color: white">
                       <?php if ($logoorsitename == 'logo') { ?>
                     <a href="<?php echo $CFG->wwwroot; ?>" class="logo">
                       <span class="logo-lg"><img class="img-responsive" alt="<?php echo format_string($SITE->shortname); ?>" src="<?php echo $logo;?>" /></span>
