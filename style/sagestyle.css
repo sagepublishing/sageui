@@ -1,5 +1,14 @@
 [[setting:loginsettingpic]]
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid #48d491 !important;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
 body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: proxima-nova, sans-serif;
 }
@@ -94,7 +103,7 @@ background-color:rgba(61,62,67,0);
 font-size:24px;
 }
 hr.divider, hr{
-   border-bottom: 3px solid #48d491 !important;
+   border-top: 3px solid #48d491 !important;
     margin-left: -20px;
     margin-right: -20px;
 }
