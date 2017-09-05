@@ -94,11 +94,14 @@ background-color:rgba(61,62,67,0);
 font-size:24px;
 }
 hr.divider, hr{
-   border-bottom: 3px solid #48d491;
+   border-bottom: 3px solid #48d491 !important;
     margin-left: -20px;
     margin-right: -20px;
 }
 
+.section li.activity{
+    border:none;
+}
 /* Making icons larger */
 
 img.iconlarge.activityicon {
