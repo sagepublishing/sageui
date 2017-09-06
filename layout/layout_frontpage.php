@@ -232,7 +232,7 @@ Courses by Social Scientists, for Social Scientists.</h2>
                      </a>
 				<?php } if (!empty($frontpageblocksection2) && !empty($frontpageblockdescriptionsection2)) {
 				?>
-                     <a href="#aboutus">
+                     <a href="https://campus.sagepub.com" target="_blank">
 			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<?php if(!empty($frontpageblockiconsection2)) { ?>
 						<div class="iconcircle">
