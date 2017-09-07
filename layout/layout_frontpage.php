@@ -210,91 +210,13 @@ Courses by Social Scientists, for Social Scientists.</h2>
                     <?php echo $frontpageaboutustext;?>               
                 </div>
                 <div class="col-lg-8">
-                 <div class="row wdm_generalbox">
-				<?php if (!empty($frontpageblocksection1) && !empty($frontpageblockdescriptionsection1)) {
-				?>
-                     <a href="#mycourses">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<?php if(!empty($frontpageblockiconsection1)) { ?>
-						<div class="iconcircle">
-						<i class="fa fa-<?php echo $frontpageblockiconsection1; ?>"></i>
-						</div>
-					<?php } ?>
-			          
-					<div class="iconbox-content ">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection1; ?></p>
-					</div>
-
-					<?php if (!empty($sectionbuttontext1) && !empty($sectionbuttonlink1)) { ?>
-						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink1;?>" target="_blank"><?php echo $sectionbuttontext1; ?></a>
-					<?php } ?>
-			      </div>
-                     </a>
-				<?php } if (!empty($frontpageblocksection2) && !empty($frontpageblockdescriptionsection2)) {
-				?>
-                     <a href="https://campus.sagepub.com" target="_blank">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<?php if(!empty($frontpageblockiconsection2)) { ?>
-						<div class="iconcircle">
-						<i class="fa fa-<?php echo $frontpageblockiconsection2; ?>"></i>
-						</div>
-					<?php } ?>
-			          
-					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection2; ?></p>
-					</div>
-
-					<?php if (!empty($sectionbuttontext2) && !empty($sectionbuttonlink2)) { ?>
-						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink2;?>" target="_blank"><?php echo $sectionbuttontext2; ?></a>
-					<?php } ?>
-			      </div>
-                     </a>
-				<?php }
-				if (!empty($frontpageblocksection3) && !empty($frontpageblockdescriptionsection3)) {
-				?>
-                     <a href="#faqs">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					
-					<?php if(!empty($frontpageblockiconsection3)) { ?>
-						<div class="iconcircle">
-						<i class="fa fa-<?php echo $frontpageblockiconsection3; ?>"></i>
-						</div>
-					<?php } ?>
-
-					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection3; ?></p>
-					</div>
-
-					<?php if (!empty($sectionbuttontext3) && !empty($sectionbuttonlink3)) { ?>
-						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink3;?>" target="_blank"><?php echo $sectionbuttontext3; ?></a>
-					<?php } ?>
-			      </div>
-                     </a>
-				<?php }
-				if (!empty($frontpageblockiconsection4) && !empty($frontpageblocksection4) && !empty($frontpageblockdescriptionsection4)) {
-				?>
-                     <a href="#contactus">
-			      <div class="iconbox span3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<?php if(!empty($frontpageblockiconsection4)) { ?>
-						<div class="iconcircle">
-						<i class="fa fa-<?php echo $frontpageblockiconsection4; ?>"></i>
-						</div>
-					<?php } ?>
-
-					<div class="iconbox-content">
-						<p style="font-size: 1.2em;"><?php echo $frontpageblocksection4; ?></p>
-					</div>
-
-					<?php if (!empty($sectionbuttontext4) && !empty($sectionbuttonlink4)) { ?>
-						<a class="btn btn-primary btn-flat" href="<?php echo $sectionbuttonlink4;?>" target="_blank"><?php echo $sectionbuttontext4; ?></a>
-					<?php } ?>
-			      </div>
-                     </a>
-				<?php } ?>
-		    </div> <!-- general sections end -->                   
+                    <div class="embed-responsive">
+                        <iframe class ="embed-responsive-item" src="https://www.youtube.com/embed/mctnEnIfeqE" allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
-            
+                        
             <hr class="divider">
             <div class="row pad-20">
                 <div class="col-lg-12">
