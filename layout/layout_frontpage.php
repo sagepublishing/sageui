@@ -204,18 +204,8 @@ Courses by Social Scientists, for Social Scientists.</h2>
 				?>
 		  	</div>
 
+            <?php echo $frontpageaboutustext;?> 
 		  	<!-- general sections -->
-            <div class="row pad-20">
-                <div class="col-lg-4">
-                    <?php echo $frontpageaboutustext;?>               
-                </div>
-                <div class="col-lg-8">
-                    <div class="embed-responsive">
-                        <iframe class ="embed-responsive-item" src="https://www.youtube.com/embed/mctnEnIfeqE" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
                         
             <hr class="divider">
             <div class="row pad-20">
