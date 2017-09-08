@@ -77,7 +77,7 @@ h2{
 
 /*Styling by brand*/
 .btn-primary{
-    background-color:#48d491;
+    background-color:#48d491 !important;
     color:#fff;
 }
 
