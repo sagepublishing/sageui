@@ -381,7 +381,11 @@ trait format_section_trait {
         $modinfo = get_fast_modinfo($course);
         if (!empty($modinfo->sections[$section->section])) {
             // right
+             if ($this->page->user_is_editing() || $activities_expanded) {
+            $op .= html_writer::start_tag('div', array('class' => 'toggle-btn-wrapper col-xs-12 hidden'));
+            } else {
             $op .= html_writer::start_tag('div', array('class' => 'toggle-btn-wrapper col-xs-12'));
+            }
             $op .= '<button class="material-button material-button-toggle closed" type="button">';
             if ($this->page->user_is_editing() || $activities_expanded) {
                 $op .='<i class="fa fa-angle-up fa-lg"> </i>&nbsp&nbsp <span>'.get_string("hidesection", "theme_remui").' </span>';
