@@ -67,7 +67,7 @@ if (isloggedin() && !isguestuser()) {
 
 
     $userprofileurl = new moodle_url('/user/profile.php', array('id' => $USER->id));
-    $userdashboardurl = new moodle_url('/my');
+    $userdashboardurl = new moodle_url('/');
     $userlogouturl = new moodle_url('/login/logout.php', array('sesskey' => sesskey(), 'alt' => 'logout'));
     $coursearchive = new moodle_url('/course/index.php');
     $preferences = new moodle_url('/user/preferences.php');
