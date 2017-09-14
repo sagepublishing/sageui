@@ -79,6 +79,7 @@ h2{
 .btn-primary{
     background-color:#48d491 !important;
     color:#fff;
+    border-color: transparent!important;
 }
 
 button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {

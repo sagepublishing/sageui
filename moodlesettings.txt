@@ -2,6 +2,8 @@ Moodle changes to make
 
 Language Pack
 component - core, string ID courses change to My Courses
+core - myhome change to Home
+core_my - mymoodle change to Home
 
 admin/settings.php?section=frontpagesettings
 Configure Full site name and short name
