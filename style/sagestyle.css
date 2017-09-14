@@ -173,4 +173,13 @@ a.remui-back-to-top.moodle-has-zindex i {
     padding: 5px;
 }
 
+/*Styling footer*/
+.main-footer .social-section {
+    background: #48d491;
+}
+
+.main-footer ul.social-icons {
+    padding: 2px;
+}
+
 [[setting:customcss]]
